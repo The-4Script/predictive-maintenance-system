@@ -1,0 +1,46 @@
+{
+  "model": "RandomForestClassifier",
+  "n_train": 2400,
+  "n_test": 600,
+  "accuracy": 0.985,
+  "roc_auc": 0.9992,
+  "confusion_matrix": [
+    [
+      478,
+      2
+    ],
+    [
+      7,
+      113
+    ]
+  ],
+  "classification_report": {
+    "0": {
+      "precision": 0.9855670103092784,
+      "recall": 0.9958333333333333,
+      "f1-score": 0.9906735751295337,
+      "support": 480.0
+    },
+    "1": {
+      "precision": 0.9826086956521739,
+      "recall": 0.9416666666666667,
+      "f1-score": 0.9617021276595744,
+      "support": 120.0
+    },
+    "accuracy": 0.985,
+    "macro avg": {
+      "precision": 0.9840878529807262,
+      "recall": 0.96875,
+      "f1-score": 0.9761878513945541,
+      "support": 600.0
+    },
+    "weighted avg": {
+      "precision": 0.9849753473778575,
+      "recall": 0.985,
+      "f1-score": 0.9848792856355417,
+      "support": 600.0
+    }
+  },
+  "random_state": 42,
+  "test_size": 0.2
+}

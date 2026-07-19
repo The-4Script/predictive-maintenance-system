@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Predictive Maintenance System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div>
+        <h1>🛠️ Predictive Maintenance System</h1>
+        <p class="subtitle">AI decision support for industrial machine failure risk</p>
+      </div>
+      <p id="apiStatus" class="status">Checking backend…</p>
+    </div>
+  </header>
+
+  <div class="disclaimer">
+    ⚠️ This tool provides decision support only. Final approval must be made by an authorized person.
+  </div>
+
+  <main>
+    <!-- Row: Upload (full width, compact) -->
+    <section class="card">
+      <h2>1 · Upload machine snapshots (CSV)</h2>
+      <div class="row">
+        <input type="file" id="csvUpload" accept=".csv" />
+        <button id="uploadBtn" class="btn">Upload</button>
+        <button id="predictBtn" class="btn btn-primary">Run Predictions</button>
+        <span id="uploadMsg" class="msg"></span>
+      </div>
+    </section>
+
+    <!-- Landscape row: Summary | Business impact side by side -->
+    <div class="grid2">
+      <section class="card">
+        <h2>2 · Fleet risk summary</h2>
+        <div class="stats stats-3">
+          <div class="stat"><span id="totalMachines">0</span><label>Total</label></div>
+          <div class="stat high"><span id="highRisk">0</span><label>High Risk</label></div>
+          <div class="stat low"><span id="lowRisk">0</span><label>Low Risk</label></div>
+        </div>
+      </section>
+
+      <section class="card impact-card">
+        <h2>3 · Business impact</h2>
+        <div class="stats stats-3">
+          <div class="stat"><span id="impFlagged">0</span><label>To Inspect</label></div>
+          <div class="stat downtime"><span id="impDowntime">0</span><label>Downtime Avoided</label></div>
+          <div class="stat cost"><span id="impCost">0</span><label>Cost Saved</label></div>
+        </div>
+        <button id="impMoreBtn" class="link-btn">Show assumptions ▾</button>
+        <p id="impAssumptions" class="hint hidden"></p>
+      </section>
+    </div>
+
+    <!-- Machines table (full width) with Show More -->
+    <section class="card">
+      <h2>4 · Inspection priority (ranked by risk)</h2>
+      <p class="hint">Click a row for details and AI recommendation.</p>
+      <div class="table-wrap">
+        <table id="machineTable">
+          <thead>
+            <tr>
+              <th>Machine ID</th><th>Type</th><th>Temp</th><th>Vibration</th>
+              <th>Current</th><th>Load</th><th>Risk</th><th>Confidence</th><th>Status</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <button id="tableMoreBtn" class="link-btn hidden">Show all ▾</button>
+    </section>
+
+    <!-- Landscape row: Details | AI recommendation -->
+    <div class="grid2">
+      <section class="card">
+        <h2>5 · Machine details</h2>
+        <div id="machineDetails" class="details"><p class="hint">Click a machine row above.</p></div>
+      </section>
+      <section class="card">
+        <h2>6 · 🤖 AI recommendation</h2>
+        <div id="aiExplanation" class="ai"><p class="hint">Select a machine to get an AI explanation.</p></div>
+        <div class="row" style="margin-top:12px">
+          <button id="approveBtn" class="btn btn-primary" disabled>✅ Approve Work Order</button>
+        </div>
+        <p id="workOrderMsg" class="msg"></p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>ML: Random Forest · Backend: FastAPI + SQLite · Explanations: GenAI (guardrailed)</p>
+    <p class="credit">Built at Cognizant Hackathon 2026 · Team 4Script</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

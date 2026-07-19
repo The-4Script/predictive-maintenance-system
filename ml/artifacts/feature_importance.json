@@ -1,0 +1,50 @@
+[
+  {
+    "feature": "vibration",
+    "importance": 0.3174
+  },
+  {
+    "feature": "temperature",
+    "importance": 0.248
+  },
+  {
+    "feature": "current",
+    "importance": 0.1082
+  },
+  {
+    "feature": "operating_hours",
+    "importance": 0.0873
+  },
+  {
+    "feature": "load",
+    "importance": 0.0739
+  },
+  {
+    "feature": "maintenance_count",
+    "importance": 0.0603
+  },
+  {
+    "feature": "machine_type_Compressor",
+    "importance": 0.0325
+  },
+  {
+    "feature": "machine_type_CNC",
+    "importance": 0.0293
+  },
+  {
+    "feature": "ambient_temperature",
+    "importance": 0.0136
+  },
+  {
+    "feature": "humidity",
+    "importance": 0.0121
+  },
+  {
+    "feature": "machine_type_Motor",
+    "importance": 0.0099
+  },
+  {
+    "feature": "machine_type_Pump",
+    "importance": 0.0075
+  }
+]

@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+python-multipart
+pandas
+scikit-learn
+joblib
+numpy
+google-generativeai
+python-dotenv
