@@ -337,12 +337,21 @@ Built for a hackathon, open for learning. Issues and PRs welcome.
 
 ## 👥 Team 4Script
 
-| Name | LinkedIn |
-|---|---|
-| **Kaustubh Bhoir** | [kaustubh-bhoir-ce](https://www.linkedin.com/in/kaustubh-bhoir-ce/) |
-| **Durvesh Thorat** | [durvesh-thorat](https://www.linkedin.com/in/durvesh-thorat/) |
-| **Nipun Tamore** | [nipun-tamore](https://www.linkedin.com/in/nipun-tamore-21ba5b308/) |
-| **Arnav Patil** | [arnav-pradip-patil](https://www.linkedin.com/in/arnav-pradip-patil-3b872b358/) |
+**Kaustubh Bhoir**
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Kaustubh%20Bhoir-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kaustubh-bhoir-ce/)
+[![GitHub](https://img.shields.io/badge/GitHub-Kaustubhhbhoirr-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Kaustubhhbhoirr)
+
+**Durvesh Thorat**
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Durvesh%20Thorat-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/durvesh-thorat/)
+[![GitHub](https://img.shields.io/badge/GitHub-durvesh--thorat-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/durvesh-thorat)
+
+**Nipun Tamore**
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Nipun%20Tamore-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/nipun-tamore-21ba5b308/)
+[![GitHub](https://img.shields.io/badge/GitHub-nipuntamore-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/nipuntamore)
+
+**Arnav Patil**
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Arnav%20Patil-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/arnav-pradip-patil-3b872b358/)
+[![GitHub](https://img.shields.io/badge/GitHub-ArnavPatil--09-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/ArnavPatil-09)
 
 ---
 
