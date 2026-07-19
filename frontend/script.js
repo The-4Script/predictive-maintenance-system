@@ -27,7 +27,7 @@ function checkStatus() {
   var el = document.getElementById("apiStatus");
   api("/health").then(function (h) {
     el.innerHTML = 'Backend: <span class="ok">online</span> · model ' +
-      (h.model_ready ? "✓" : "✗") + " · GenAI: " + (h.genai_enabled ? "live" : "fallback template");
+      (h.model_ready ? "ready" : "not loaded") + " · GenAI: " + (h.genai_enabled ? "live" : "fallback template");
   }).catch(function () {
     el.innerHTML = 'Backend: <span class="bad">offline</span> — run: python -m uvicorn backend.main:app --reload';
   });
